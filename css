@@ -1,0 +1,83 @@
+body {
+  background: linear-gradient(135deg, #743EC1, #3EC1BE);
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+button,input:focus {
+  outline: none;
+}
+
+.calculator {
+  height: 1050px;
+  width: 612px;
+  border-radius: 16px;
+  margin-left: 184px;
+  margin-right: 184px;
+  margin-top: 396.5px;
+  background-color: #ecf0f3;
+  color: #42445A;
+  box-shadow: -15px -15px 15px rgba(255,255,255,0.3),
+              15px 15px 15px rgba(0,0,0,0.3);
+  padding-top: 0.1px;
+}
+
+.screen {
+  margin-right: 12px;
+  margin: 12px;
+  padding-right: 12px;
+  padding-left: 12px;
+  min-height: 220px;
+  max-height: 220px;
+  width: 564px;
+  background-color: #ecf0f3;
+  box-shadow: inset -12px -12px 26px #fff,
+             inset 12px 12px 26px rgba(0,0,0,0.16);
+  border-radius: 12px;
+  font-size: 76px;
+  text-align: right;
+  overflow-x: auto;
+  text-overflow: break-all;
+  border: none;
+}
+
+.row {
+  height: 159px;
+}
+
+.button {
+  font-weight: bold;
+  height: 135px;
+  width: 135px;
+  border-radius: 1000px;
+  margin: 12px;
+  font-size: 40px;
+  background-color: #ecf0f3;
+  color: #3DC7D0;
+  border: 1px solid #ecf0f3;
+  box-shadow: -5px -5px 12px #fff,
+              5px 5px 12px rgba(0,0,0,0.16);
+}
+
+.button2 {
+  font-weight: bold;
+  height: 135px;
+  width: 135px;
+  border-radius: 1000px;
+  margin-right: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 40px;
+  background-color: #ecf0f3;
+  color: #3DC7D0;
+  border: 1px solid #ecf0f3;
+  box-shadow: -5px -5px 12px #fff,
+              5px 5px 12px rgba(0,0,0,0.16);
+}
+
+.equal {
+  background-color: #ED9C4B;
+  color: white;
+}
