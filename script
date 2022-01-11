@@ -1,0 +1,45 @@
+var screen = document.querySelector('#screen');
+
+var btn = document.querySelectorAll('.btn');
+
+for(item of btn)
+    {
+        item.addEventListener('click',(e)=>{
+            btntext=e.target.innerText;
+            screen.value+=btntext;
+        });
+    }
+
+function backSpace(){
+  screen.value=screen.value.substr(0,screen.value.length-1);
+}
+
+function percentage(){
+  screen.value = screen.value + '/100';
+}
+
+function divide(){
+  screen.value += '/';
+}
+
+function times(){
+  screen.value += '*';
+}
+
+function minus(){
+  screen.value += '-';
+}
+
+function plus(){
+  screen.value += '+'
+}
+
+function equal(){
+  try {
+    screen.value = eval(screen.value)
+  } catch (err) {
+    alert("Please input a valid argument!")
+  }
+}
+
+\\some codes are from https://github.com/rsmarquetech/scientific-calci
